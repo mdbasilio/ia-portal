@@ -1,6 +1,3 @@
 {
-    "url_hablante": "https://api.d-id.com/talks",
-    "authorization": "Basic aHZmbF9laW5kdDk0QHh1cGl2LmNvbQ:Iuw3P3uDN85C56Kgcqjcw",
-    "url_botsonic": "https://api.writesonic.com/v1/botsonic/botsonic/generate/ab850b1f-a030-480d-9180-4192fa69a763",
-    "apiKey": "38ae5c55-8122-47b9-b628-0981b1f76f0c"
+    "url_fn": "https://ir-poc-ia-texttovideo.azurewebsites.net/api/SpeakerFunction?code=RFgrM7NkXYFGoXB4K4UVrR3GjwfXpiNC-RWKqYAralGnAzFuki35dQ=="
 }
