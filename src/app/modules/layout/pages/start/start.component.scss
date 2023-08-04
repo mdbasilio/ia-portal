@@ -1,0 +1,38 @@
+/* Estilos para el contenedor */
+.container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los botones */
+.button {
+    padding: 10px 20px;
+    margin: 16px;
+    height: 6rem;
+    width: 300px;
+    font-size: 3em;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.embed-responsive .embed-responsive-item video {
+    overflow: none;
+    width: 100vw; 
+    height: auto; 
+    max-height: 65vh; 
+} 
+
+.btn-lg {
+    @media screen and (min-width: 1024px) and (orientation:landscape) {
+        height: 3em;
+        width: 12rem;
+        font-size: 1.22em;
+    }
+}

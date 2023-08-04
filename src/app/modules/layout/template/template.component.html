@@ -1,0 +1,26 @@
+<div class="main-container" fxLayout="column">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" style="width: 10em; margin-right: 16px;" alt="Logo">
+            </a>
+        </div>
+    </nav>
+
+    <div fxLayout="column" fxFlex class="content-container">
+        <div class="container-fluid p-2">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div>
+        &copy; iRoute Solutions S.A. {{year}}, Guayaquil, Ecuador
+    </div>
+</footer>
+
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-scale">
+    <p style="color: white">Por favor espere mientras se genera el vídeo... </p>
+</ngx-spinner>

@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex: 1;
+}
+
+.content-container {
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    font-size: 1.22rem;
+    padding: .8%;
+}

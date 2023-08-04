@@ -1,0 +1,103 @@
+.distribuido {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-around;
+}
+
+.embed-responsive .embed-responsive-item video {
+    max-width: 100%;
+    overflow: none;
+    height: auto;
+    max-height: 50vh;
+    min-height: 100%;
+}
+
+
+.response-card-video {
+    .card {
+        .card-body {
+            @media screen and (min-width:576px) {
+                //border: 8px solid rebeccapurple;
+                flex: 0 0 100%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                //max-width: 100%;
+                min-height: 50vh;
+
+                .ia-image {
+                    text-align: center;
+
+                    img {
+                        width: 14rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1024px) and (orientation:portrait) {
+                flex: 0 0 100%;
+                //width: 100vw;
+                min-height: 60vh;
+                display: flex;
+                align-items: center;
+
+                .ia-image {
+                    text-align: center;
+
+                    img {
+                        width: 35rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1024px) and (orientation:landscape) {
+                flex: 0 0 50%;
+                //max-width: 100%;
+                min-height: 20vh;
+                //border: 2px solid red;
+                display: flex;
+                align-items: center;
+
+                .ia-image {
+                    height: 100%;
+
+                    //border: 2px solid yellowgreen;
+                    img {
+                        width: 16rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.text-responsive {
+    font-size: 1.22em;
+
+    @media screen and (min-width: 1024px) and (orientation:landscape) {
+        font-size: 1.5em;
+    }
+}
+
+.input-responsive {
+    @media screen and (min-width: 1024px) and (orientation:landscape) {
+        max-width: 100%;
+        font-size: 1.5em;
+        input{
+            padding: 1.22em;
+        }
+    }
+}
+
+.responsive-btn {
+    font-size: 1.1em;
+
+    @media screen and (min-width: 1024px) and (orientation:landscape) {
+        font-size: 1.22em;
+        letter-spacing: 2px;
+    }
+}

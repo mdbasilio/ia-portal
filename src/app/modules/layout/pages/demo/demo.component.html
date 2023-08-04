@@ -1,0 +1,47 @@
+<div class="container-fluid distribuido">
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-8 col-lg-10 response-card-video">
+            <div class="card border-info">
+
+                <div class="card-body">
+
+                    <div *ngIf="videoUrl; else notContent">
+                        <div class="embed-responsive">
+                            <div class="embed-responsive-item">
+                                <video preload="auto" controls autoplay playsinline class="w-100">
+                                    <source [src]="videoUrl" type="video/mp4">
+                                    Tu navegador no soporta el elemento de vídeo.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ng-template #notContent>
+                        <div class="text-center ia-image">
+                            <img width="170" src="assets/images/robot.png" alt="Inteligencia Artificial">
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-1 mb-5">
+        <div class="col-md-8 col-lg-10 border-right">
+            <div class="form-group">
+                <label class="form-label mt-4 text-responsive">¿Qué quieres saber?:</label>
+                <div class="form-group">
+                    <div class="input-group mb-3 input-responsive">
+                        <ng-container [formGroup]="form">
+                            <input type="text" class="form-control form-control-lg" formControlName="text" aria-label="Preguntame"
+                                aria-describedby="button-addon2" (keydown)="onKeyDown($event)">
+                        </ng-container>
+
+                        <button class="btn btn-success btn-lg responsive-btn" type="button" id="button-addon2"
+                            (click)="crearHablante()">Respuesta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
